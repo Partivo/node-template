@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 
-export default class template {
+export default class templateEngine {
     constructor(dir) {
         this.dir = dir;
     }
