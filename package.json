@@ -13,6 +13,6 @@
 	"author": "Partivo",
 	"license": "MIT",
 	"publishConfig": {
-		"access": "public",
+		"access": "public"
 	}
 }
