@@ -1,15 +1,13 @@
-import fs from 'node:fs';
+const fs = require('fs');
 
-export default class templateEngine {
-    constructor(dir) {
-        this.dir = dir;
-    }
+function templateEngine(dir) {
+    this.dir = dir;
+}
 
-    render(file, value) {
-        let data = fs.readFileSync(`${this.dir}/${file}.html`, 'utf8');
-        if(value) Object.keys(value).forEach((key) =>
-            data = data.replace(`{{ replace-${key} }}`, () => value[key])
-        );
-        return data;
-    }
+templateEngine.prototype.render = function(file, value) {
+    let data = fs.readFileSync(`${this.dir}/${file}.html`, 'utf8');
+    if(value) Object.keys(value).forEach((key) =>
+        data = data.replace(`{{ replace-${key} }}`, () => value[key])
+    );
+    return data;
 }
