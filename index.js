@@ -11,3 +11,5 @@ templateEngine.prototype.render = function(file, value) {
     );
     return data;
 }
+
+module.exports = templateEngine;
