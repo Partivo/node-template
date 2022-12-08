@@ -3,6 +3,7 @@
 	"version": "2.2.0",
 	"description": "Simple Template Engine - Node.js",
 	"main": "index.js",
+	"type": "module",
 	"scripts": { "test": "echo 'Error: no test specified'" },
 	"repository": {
 		"type": "git",
