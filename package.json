@@ -1,6 +1,6 @@
 {
 	"name": "@partivo/template-engine",
-	"version": "2.2.2",
+	"version": "3.0.0",
 	"description": "Simple Template Engine - Node.js",
 	"main": "index.js",
 	"scripts": { "test": "echo 'Error: no test specified'" },
