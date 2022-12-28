@@ -6,7 +6,7 @@ JavaScript File
 ```js
 import templateEngine from '@partivo/template-engine';
 const ssi = new templateEngine('/usr/local/bin/template'); // Folder Location
-const page = ssi.render('404', {
+const page = ssi.renderFile('404', {
   hostname: "partivo.net"
 }); // 404.html
 ```
