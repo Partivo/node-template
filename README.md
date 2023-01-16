@@ -1,4 +1,4 @@
-<h1 align="center">@partivo/template-engine</h1>
+<h1 align="center">@partivo/template</h1>
 Soon
 
 ## Example Code
