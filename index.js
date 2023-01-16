@@ -1,10 +1,10 @@
 var fs = require('fs');
 
-function templateEngine(dir) {
+function Template(dir) {
     this.dir = dir;
 }
   
-templateEngine.prototype.renderFile = function (file, value) {
+Template.prototype.renderFile = function (file, value) {
     let data = fs.readFileSync(`${this.dir}/${file}.html`, 'utf8');
     if (value) {
         Object.keys(value).forEach(function(key) {
@@ -14,7 +14,7 @@ templateEngine.prototype.renderFile = function (file, value) {
     return data;
 }
 
-templateEngine.prototype.render = function (data, value) {
+Template.prototype.render = function (data, value) {
     if (value) {
         Object.keys(value).forEach(function(key) {
             data = data.replace(`{{ replace-${key} }}`, () => value[key]);
@@ -23,4 +23,4 @@ templateEngine.prototype.render = function (data, value) {
     return data;
 }
 
-module.exports = templateEngine;
+module.exports = Template;
