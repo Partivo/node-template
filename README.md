@@ -20,7 +20,7 @@ HTML File
     <body>
         <center><h1>404 Not Found</h1></center>
         <hr>
-        <center>{{ replace-hostname }}</center>
+        <center>{{ hostname }}</center>
     </body>
 </html>
 ```
