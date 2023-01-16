@@ -4,9 +4,9 @@ Soon
 ## Example Code
 JavaScript File
 ```js
-import templateEngine from '@partivo/template-engine';
-const ssi = new templateEngine('/usr/local/bin/template'); // Folder Location
-const page = ssi.renderFile('404', {
+import Template from '@partivo/template';
+const template = new Template('/usr/local/bin/template'); // Folder Location
+const page = template.renderFile('404', {
   hostname: "partivo.net"
 }); // 404.html
 ```
