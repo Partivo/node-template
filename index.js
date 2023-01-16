@@ -8,7 +8,7 @@ Template.prototype.renderFile = function (file, value) {
     let data = fs.readFileSync(`${this.dir}/${file}.html`, 'utf8');
     if (value) {
         Object.keys(value).forEach(function(key) {
-            data = data.replace(`{{ replace-${key} }}`, () => value[key]);
+            data = data.replace(`{{ ${key} }}`, () => value[key]);
         });
     }
     return data;
@@ -17,7 +17,7 @@ Template.prototype.renderFile = function (file, value) {
 Template.prototype.render = function (data, value) {
     if (value) {
         Object.keys(value).forEach(function(key) {
-            data = data.replace(`{{ replace-${key} }}`, () => value[key]);
+            data = data.replace(`{{ ${key} }}`, () => value[key]);
         });
     }
     return data;
