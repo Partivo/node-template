@@ -1,5 +1,5 @@
 {
-	"name": "@partivo/template",
+	"name": "@partivo/template-engine",
 	"author": "Partivo",
 	"version": "1.0.0",
 	"main": "index.js",
