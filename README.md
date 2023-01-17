@@ -1,5 +1,5 @@
 <h1 align="center">@partivo/template</h1>
-Soon
+Simple Template Engine - Node.js
 
 ## Example Code
 JavaScript File
