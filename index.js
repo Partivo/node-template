@@ -3,7 +3,7 @@ var minify = require('html-minifier').minify;
 
 module.exports = {
 	renderFile: function(file, data, options) {
-		let str = fs.readFileSync(file, 'utf8');
+		const str = fs.readFileSync(file, 'utf8');
 		return this.render(str, data, options);
 	},
 
