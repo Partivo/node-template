@@ -4,23 +4,23 @@ function Template(dir) {
     this.dir = dir;
 }
   
-Template.prototype.renderFile = function (file, value) {
-    let data = fs.readFileSync(`${this.dir}/${file}.html`, 'utf8');
-    if (value) {
-        Object.keys(value).forEach(function(key) {
-            data = data.replace(`{{ ${key} }}`, () => value[key]);
+Template.prototype.renderFile = function (file, data) {
+    let str = fs.readFileSync(`${this.dir}/${file}.html`, 'utf8');
+    if (data) {
+        Object.keys(data).forEach(function(key) {
+            str = str.replace(`{{ ${key} }}`, () => data[key]);
         });
     }
-    return data;
+    return str;
 }
 
-Template.prototype.render = function (data, value) {
-    if (value) {
-        Object.keys(value).forEach(function(key) {
-            data = data.replace(`{{ ${key} }}`, () => value[key]);
+Template.prototype.render = function (str, data) {
+    if (data) {
+        Object.keys(data).forEach(function(key) {
+            str = str.replace(`{{ ${key} }}`, () => data[key]);
         });
     }
-    return data;
+    return str;
 }
 
 module.exports = Template;
