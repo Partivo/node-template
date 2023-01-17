@@ -21,4 +21,4 @@ template.render = function (str, data) {
     return str;
 }
 
-module.exports = Template;
+module.exports = template;
