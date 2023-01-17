@@ -7,7 +7,7 @@
 	"description": "Simple Template Engine - Node.js",
 	"scripts": { "test": "echo 'Error: no test specified'" },
 	"dependencies": {
-		"html-minifier": "^4.0.0",
+		"html-minifier": "^4.0.0"
 	},
 	"repository": {
 		"type": "git",
