@@ -4,9 +4,8 @@ Soon
 ## Example Code
 JavaScript File
 ```js
-import Template from '@partivo/template';
-const template = new Template('/usr/local/bin/template'); // Folder Location
-const page = template.renderFile('404', {
+import template from '@partivo/template';
+const page = template.renderFile('/usr/local/bin/template/404.html', {
   hostname: "partivo.net"
 }); // 404.html
 ```
