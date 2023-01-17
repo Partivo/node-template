@@ -1,16 +1,19 @@
 {
 	"name": "@partivo/template",
+	"author": "Partivo",
 	"version": "1.0.0",
-	"description": "Simple Template Engine - Node.js",
 	"main": "index.js",
+	"license": "MIT",
+	"description": "Simple Template Engine - Node.js",
 	"scripts": { "test": "echo 'Error: no test specified'" },
+	"dependencies": {
+		"html-minifier": "^4.0.0",
+	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/Partivo/node-template-engine.git"
 	},
 	"keywords": [ "template", "engine" ],
-	"author": "Partivo",
-	"license": "MIT",
 	"publishConfig": {
 		"access": "public"
 	}
