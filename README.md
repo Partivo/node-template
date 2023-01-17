@@ -1,11 +1,11 @@
-<h1 align="center">@partivo/template</h1>
+<h1 align="center">@partivo/template-engine</h1>
 Simple Template Engine - Node.js
 
 ## Example Code
 JavaScript File
 ```js
-import template from '@partivo/template';
-const page = template.renderFile('/usr/local/bin/template/404.html', {
+import templateEngine from '@partivo/template-engine';
+const page = templateEngine.renderFile('/usr/local/bin/template/404.html', {
   hostname: "partivo.net"
 }); // 404.html
 ```
