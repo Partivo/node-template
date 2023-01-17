@@ -8,15 +8,14 @@ module.exports = {
 	},
 
 	render: function(str, data, options = {}) {
-		if (data) {
+		if (data)
 			Object.keys(data).forEach(function(key) {
 				str = str.replace(`{{ ${key} }}`, () => data[key]);
 			});
-		}
-		
+
 		if(options.minify)
 			str = this.minify(str);
-			
+
 		return str;
 	},
 
