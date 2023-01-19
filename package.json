@@ -13,7 +13,7 @@
 		"type": "git",
 		"url": "https://github.com/Partivo/node-template-engine.git"
 	},
-	"keywords": [ "template", "engine" ],
+	"keywords": [ "template", "engine", "template-engine" ],
 	"publishConfig": {
 		"access": "public"
 	}
