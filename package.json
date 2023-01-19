@@ -4,7 +4,7 @@
 	"version": "3.1.0",
 	"main": "index.js",
 	"license": "MIT",
-	"description": "Simple Template Engine - Node.js",
+	"description": "Simple Template Engine",
 	"scripts": { "test": "echo 'Error: no test specified'" },
 	"dependencies": {
 		"html-minifier": "^4.0.0"
