@@ -1,5 +1,4 @@
 var fs = require('fs');
-var minify = require('html-minifier').minify;
 
 module.exports = {
 	renderFile: function(file, data, options) {
@@ -20,10 +19,6 @@ module.exports = {
 	},
 
 	minify: function(str) {
-		return minify(str, {
-			collapseWhitespace: true,
-			minifyCSS: true,
-			minifyJS: true
-		});
+
 	}
 }
